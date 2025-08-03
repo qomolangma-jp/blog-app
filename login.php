@@ -36,13 +36,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head><title>ログイン</title></head>
 <body>
 <h1>ログイン</h1>
-<form method="POST">
-    ユーザー名：<br>
-    <input type="text" name="username"><br>
-    パスワード：<br>
-    <input type="password" name="password"><br>
-    <button type="submit">ログイン</button>
-</form>
-<?= $error ?>
+<div class="container">
+    <form method="POST">
+        ユーザー名：<br>
+        <input type="text" name="username"><br>
+        パスワード：<br>
+        <input type="password" name="password"><br>
+        <button type="submit">ログイン</button>
+    </form>
+    <?= $error ?>
+</div>
 </body>
 </html>
